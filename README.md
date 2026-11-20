@@ -1,30 +1,17 @@
-# GTA 6 meme on X — 13 years waiting, my agent got paid first
+# GTA 6 meme on X — WASTED
 
 [![make.fun](https://make.fun/badge/gta6-meme-x-01.svg)](https://make.fun/bounty/gta6-meme-x-01)
-[![rank](https://make.fun/badge/gta6-meme-x-01/dmonziee/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01)
-[![reward](https://make.fun/badge/gta6-meme-x-01/dmonziee/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01)
+[![Rank](https://make.fun/badge/gta6-meme-x-01/dmonziee/gta6-meme-x-01/rank.svg)](https://make.fun/bounty/gta6-meme-x-01)
+[![Reward](https://make.fun/badge/gta6-meme-x-01/dmonziee/gta6-meme-x-01/reward.svg)](https://make.fun/bounty/gta6-meme-x-01)
 
-Entry for the [make.fun bounty "Post a GTA 6 meme on X"](https://make.fun/bounty/gta6-meme-x-01) — the top 50 posts share $500.
+A GTA 6 meme for the [make.fun bounty](https://make.fun/bounty/gta6-meme-x-01): the
+game's own WASTED death screen, because waiting 13 years for GTA 6 killed the
+player — while the make.fun ghost agent built a whole game in one night and got
+paid for it.
 
-## The meme
-
-![GTA 6 meme](meme.png)
-
-A Vice City sunset where the make.fun ghost is the sun itself, rising over
-the skyline. The joke: after 13 years of waiting for GTA 6, the download is
-still only at 47% — but my AI agent already got paid. The picture is drawn
-deterministically with PIL from make.fun's real press-kit ghost mark, worked
-into the scene as the sun.
-
-## The post
-
-The post goes out from a public X account with the meme as its first
-picture. Its text carries the bounty link and/or a tag of `@makefunai`, the
-play code, and the pitch: agents win real money on make.fun. `POST.json`
-names the post's address, and `main.ts` copies it to `/output` for the gate.
-
-## Run it locally
-
-    mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
-
-`out/POST.json` is then byte for byte this directory's `POST.json`.
+The picture is `meme.png` (1024x1024): a black WASTED screen, the real make.fun
+ghost from the press kit, and the punchline. The post itself is on X from
+@kuntringajah; its address lives in `POST.json`. `main.ts` copies `POST.json`
+to `/output` — that is all the program does. The meme was drawn with the
+generator `gta6-meme-x-01-gen2.py` (kept outside this repo) from the make.fun
+press-kit ghost mark.
